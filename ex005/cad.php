@@ -20,7 +20,7 @@
             echo "O seu sucessor é $sucessor";
         ?>
 
-        <p><a href="javascript:history.go(-1)">Voltar para a página anterior</a></p>
+        <button onclick="javascript:window.location.href='index.html'">Voltar</button>
     </main>
     
 </body>

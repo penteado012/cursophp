@@ -13,10 +13,10 @@
     <main>
         <?php 
             $number = $_GET["numero"];
-            echo "Seus R$ $number equivalem a US$" .number_format ($number / 5.22, 2);
+            echo "Seus R$" . number_format($number, 2, ",", ".") . " equivalem a US$" ."<strong>" .  number_format ($number / 5.22, 2, ",", ".") . "</strong>";
         ?>
 
-        <p><a href="javascript:history.go(-1)">Voltar para a página anterior</a></p>
+        <button onclick="javascript:history.go(-1)">Voltar a página anterior</button>
     </main>
     
 </body>
